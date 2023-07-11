@@ -1,10 +1,10 @@
 {
     "server": {
-        "port": 8003
+        "port": 9003
     },
     "app": {
         "apiPrefix" : "",
-        "url": "https://88f3-2401-4900-1c80-613c-647f-2b1c-b81f-80fe.in.ngrok.io"
+        "url": "http://darshananode.ddns.net:9003"
     },
     "validations": {
         "leastNodeVersion": 10
