@@ -210,7 +210,7 @@ module.exports = {
         debug('on_webhook');
         onAgentTransfer(requestId, data, callback);
     },
-    gethistory: gethistory
+    gethistory: gethistory 
 };
 
 //save as backup
