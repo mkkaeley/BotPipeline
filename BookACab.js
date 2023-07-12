@@ -1,7 +1,7 @@
 var botId          = "st-007da037-67f9-55c3-bf93-6272ca639359";
 var botName        = "Book a Cab";
 var sdk            = require("./lib/sdk");
-var Promise        = sdk.Promise;
+var Promise        = sdk.Promise; 
 var request        = require("request");
 var config         = require("./config");
 var mockServiceUrl = config.examples.mockServicesHost + '/cabbot';
