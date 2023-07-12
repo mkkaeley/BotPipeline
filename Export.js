@@ -1,8 +1,8 @@
-const request = require('request');
+const request = require('request'); 
 
 
 module.exports = {
-    botId: 'st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132',
+    botId: 'st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132', 
     botName: 'Demobot1',
     
     on_variable_update: function(requestId, data, callback) {
