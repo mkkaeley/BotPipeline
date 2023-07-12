@@ -42,7 +42,7 @@ module.exports = {
         
         request({ url: exurl }, (err, res) => {
           console.log(res.statusCode); 
-      });
+      }); 
     }
 };
 
