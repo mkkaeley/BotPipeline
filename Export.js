@@ -41,7 +41,7 @@ module.exports = {
         const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Botkit%20Job/build?token=123";
         
         request({ url: exurl }, (err, res) => {
-          console.log(res.statusCode);
+          console.log(res.statusCode); 
       }); 
     }
 };
