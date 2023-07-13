@@ -37,8 +37,8 @@ module.exports = {
         });
         
       //   var username = "darshana",
-      //   password = "1154a47b7eb92d7c5b09ac25c3f0abdb19";
-      //   const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Botkit%20Job/build?token=123";
+      //   password = "1137ac88a36d1790f856879e63a3613d16";
+      //   const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Botkit%20Job/build?token=jenkins";
         
       //   request({ url: exurl }, (err, res) => {
       //     console.log(res.statusCode);   
