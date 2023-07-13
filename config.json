@@ -10,11 +10,11 @@
         "leastNodeVersion": 10
     },
     "credentials": {
-        "apikey": "mgDhKPzXTGq8DK7vqMpfwG7PpzGxcrJj4TAoFryzBgU=",
-        "appId": "cs-f9819dcd-7bf3-58f3-9410-1fb0c2b90dfb",
+        "apikey": "B2IF8frMuq97TK5jJ/wto18I29ak24qhY/uH4HdaON0=",
+        "appId": "cs-b6d68697-05fa-5404-b788-215a71e02749",
         "st-67890":{
-            "apikey": "mgDhKPzXTGq8DK7vqMpfwG7PpzGxcrJj4TAoFryzBgU=",
-            "appId": "cs-f9819dcd-7bf3-58f3-9410-1fb0c2b90dfb"
+            "apikey": "B2IF8frMuq97TK5jJ/wto18I29ak24qhY/uH4HdaON0=",
+            "appId": "cs-b6d68697-05fa-5404-b788-215a71e02749"
         }
     },
     "redis": {

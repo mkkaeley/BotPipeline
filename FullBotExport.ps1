@@ -1,5 +1,5 @@
 $export_header = @{
-    'auth' = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTRhZWU4NWRiLTFkNTctNTRiNS05ZDBhLWU1YTM5OWNlOGViZiJ9.WR5FRO4WH0N0SaBU_SFV1JRoB-X_ZcQ6JbzG5MoL4Bc'
+    'auth' = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWI2ZDY4Njk3LTA1ZmEtNTQwNC1iNzg4LTIxNWE3MWUwMjc0OSJ9.bRkzPwrHF2aWLhvS3e6iEI72XVsk6nuUVPWl-z0VaFQ'
     'content-type' = 'application/json'
 }
 $export_body = '{
@@ -37,17 +37,17 @@ Start-Sleep -Seconds 1.5
 
 Expand-Archive -Path fullexport.zip -DestinationPath ./BotExport  -Force
 
-# $upload_res_bot= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTFjMTlkN2E0LWEzNGYtNTMyZC1hMjJiLTkyNGM3YzgyNTA2ZiJ9.RSbwd13e9yPI45Pos9Xv5rrfFk8Qakd2QBU7F-3rxlQ'   -H 'content-type: multipart/form-data' -F file=@botDefinition.json -F fileContext=bulkImport -F fileExtension=json  
+# $upload_res_bot= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'   -H 'content-type: multipart/form-data' -F file=@botDefinition.json -F fileContext=bulkImport -F fileExtension=json  
 # $bot_definitionid= $upload_res_bot | ConvertFrom-Json 
 
-# $upload_res_config= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTFjMTlkN2E0LWEzNGYtNTMyZC1hMjJiLTkyNGM3YzgyNTA2ZiJ9.RSbwd13e9yPI45Pos9Xv5rrfFk8Qakd2QBU7F-3rxlQ'   -H 'content-type: multipart/form-data' -F file=@config.json -F fileContext=bulkImport -F fileExtension=json  
+# $upload_res_config= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'   -H 'content-type: multipart/form-data' -F file=@config.json -F fileContext=bulkImport -F fileExtension=json  
 # $bot_configid= $upload_res_config | ConvertFrom-Json 
 
 # $bot_definitionid.fileID
 # $bot_configid.fileID
 
 # $import_header = @{
-#     'auth' = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTFjMTlkN2E0LWEzNGYtNTMyZC1hMjJiLTkyNGM3YzgyNTA2ZiJ9.RSbwd13e9yPI45Pos9Xv5rrfFk8Qakd2QBU7F-3rxlQ'
+#     'auth' = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'
 #     'content-type' = 'application/json'
 # }
 
@@ -76,7 +76,7 @@ Expand-Archive -Path fullexport.zip -DestinationPath ./BotExport  -Force
 # }'
 
 # Start-Sleep -Seconds 1.5
-# $import_res=Invoke-RestMethod -Uri "https://bots.kore.ai/api/public/bot/st-d06384bf-4180-5973-906b-6ef1507fd586/import" -Method Post -Body $import_body -Headers $import_header
+# $import_res=Invoke-RestMethod -Uri "https://bots.kore.ai/api/public/bot/st-c72008d0-ce30-571b-ba13-1078b89dbef4/import" -Method Post -Body $import_body -Headers $import_header
 # Start-Sleep -Seconds 1.5
 # $import_res._id
 
