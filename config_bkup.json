@@ -1,0 +1,36 @@
+{
+    "server": {
+        "port": 9003
+    },
+    "app": {
+        "apiPrefix" : "",
+        "url": "http://darshananode.ddns.net:9003"
+    },
+    "validations": {
+        "leastNodeVersion": 10
+    },
+    "credentials": {
+        "apikey": "mgDhKPzXTGq8DK7vqMpfwG7PpzGxcrJj4TAoFryzBgU=",
+        "appId": "cs-f9819dcd-7bf3-58f3-9410-1fb0c2b90dfb",
+        "st-67890":{
+            "apikey": "mgDhKPzXTGq8DK7vqMpfwG7PpzGxcrJj4TAoFryzBgU=",
+            "appId": "cs-f9819dcd-7bf3-58f3-9410-1fb0c2b90dfb"
+        }
+    },
+    "redis": {
+        "options": {
+            "host": "localhost",
+            "port": 6379
+        },
+        "available": false
+    },
+    "examples" : {
+        "mockServicesHost"  : "http://localhost:8004"
+    },
+    "liveagentlicense": "8947569",
+    "supportsMessageAck": true,
+    "languages":["en","de"],
+    "headers": {
+        "user-agent": "Kore/BotKit"
+    }
+}
