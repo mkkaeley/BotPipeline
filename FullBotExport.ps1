@@ -87,7 +87,7 @@ git push origin main
 #         "ivrSettings"
 #         ]
 #  }
-# }'
+# }' 
 
 # Start-Sleep -Seconds 1.5
 # $import_res=Invoke-RestMethod -Uri "https://bots.kore.ai/api/public/bot/st-c72008d0-ce30-571b-ba13-1078b89dbef4/import" -Method Post -Body $import_body -Headers $import_header
