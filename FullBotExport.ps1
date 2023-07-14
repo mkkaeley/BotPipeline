@@ -86,7 +86,7 @@ git push origin main
 #         "botVariables",
 #         "ivrSettings"
 #         ]
-#  }
+#  } 
 # }' 
 
 # Start-Sleep -Seconds 1.5
