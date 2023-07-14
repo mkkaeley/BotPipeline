@@ -40,13 +40,13 @@ git config --global user.email "darshanavadalia04@gmail.com"
 git config --global user.name "darshana0406"
 Expand-Archive -Path fullexport.zip -DestinationPath ./ExportBot  -Force
 
-git add botDefinition.json config.json icon.png
+git add ExportBot/botDefinition.json ExportBot/config.json ExportBot/icon.png
 git commit -m "Bot Files Update"
 
 git push origin main
 
 
-
+# cd ExportBot
 # $upload_res_bot= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A'   -H 'content-type: multipart/form-data' -F file=@botDefinition.json -F fileContext=bulkImport -F fileExtension=json  
 # $bot_definitionid= $upload_res_bot | ConvertFrom-Json 
 
