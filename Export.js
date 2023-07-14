@@ -37,8 +37,8 @@ module.exports = {
         });
         
       //   var username = "darshana",
-      //   password = "1154a47b7eb92d7c5b09ac25c3f0abdb19";
-      //   const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Botkit%20Job/build?token=123";
+      //   password = "11e963401c62a5ff805edfdf767d7dacac";
+      //   const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Export_Checkin/build?token=12345";
         
       //   request({ url: exurl }, (err, res) => {
       //     console.log(res.statusCode);   
