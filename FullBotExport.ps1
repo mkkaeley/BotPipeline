@@ -17,6 +17,9 @@ $export_body = '{
             "smallTalk"
         ],
         "nlpData": [
+            "training_data",
+            "bot_synonyms",
+            "defaultDialog",
             "nlpSettings",
             "utterances",
             "patterns",
