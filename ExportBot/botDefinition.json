@@ -1013,7 +1013,7 @@
                     "channel": "default",
                     "createdBy": "Thu Jun 22 2023 05:40:21 GMT+0000 (Coordinated Universal Time)",
                     "createdOn": "Thu Jun 22 2023 05:42:16 GMT+0000 (Coordinated Universal Time)",
-                    "lMod": "Fri Jul 14 2023 12:07:24 GMT+0000 (Coordinated Universal Time)",
+                    "lMod": "Fri Jul 14 2023 12:13:45 GMT+0000 (Coordinated Universal Time)",
                     "lModBy": "Thu Jun 22 2023 05:40:21 GMT+0000 (Coordinated Universal Time)",
                     "localeData": {
                         "en": {
@@ -1039,6 +1039,15 @@
             "refId": "a158f6f1-a2de-582b-8eb1-e0a50291007e",
             "taskName": "Welcome_Task",
             "taskType": "intent",
+            "nodeType": "dialog"
+        },
+        {
+            "localeData": {
+                "en": {}
+            },
+            "refId": "800eaa36-99a2-5e39-a58a-ab3b64d8bc58",
+            "taskName": "Entity0003",
+            "taskType": "entity",
             "nodeType": "dialog"
         },
         {
@@ -1082,7 +1091,7 @@
                 "en": {}
             },
             "refId": "144cbc64-7368-5cd2-bb24-4304384576e4",
-            "taskName": "Test_2",
+            "taskName": "Internet",
             "taskType": "intent",
             "nodeType": "dialog"
         },
@@ -1141,6 +1150,51 @@
                 "en": {
                     "intent": "Welcome Task",
                     "desc": "Welcome Task"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "spellcorrectThreshold": 0,
+            "preConditions": [],
+            "vNameSpace": [],
+            "useTaskLevelNs": true,
+            "isSensitive": false
+        },
+        {
+            "_id": "dc-67d33da9-ea6a-5579-bea3-0326aafebf8e",
+            "refId": "800eaa36-99a2-5e39-a58a-ab3b64d8bc58",
+            "name": "Entity0003",
+            "piiDataEnabled": false,
+            "serviceNodeType": "custom",
+            "type": "entity",
+            "entityType": "label",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "Sample prompt message for Entity0003",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "errorMessage": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "I'm sorry, I am unable to recognize the string. Please enter again.",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "Entity0003"
                 }
             },
             "entityFields": {
@@ -1347,7 +1401,7 @@
         {
             "_id": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
             "refId": "144cbc64-7368-5cd2-bb24-4304384576e4",
-            "name": "Test_2",
+            "name": "Internet",
             "piiDataEnabled": false,
             "serviceNodeType": "custom",
             "type": "intent",
@@ -1356,7 +1410,7 @@
             "localeData": {
                 "en": {
                     "desc": "",
-                    "intent": "Test 2"
+                    "intent": "Internet"
                 }
             },
             "entityFields": {
@@ -1774,84 +1828,6 @@
             ]
         },
         {
-            "_id": "dg-4b8df0b9-8f13-50e6-9072-b00d2acf40c8",
-            "refId": "3e83710e-f873-5944-89d9-e523eae07e53",
-            "nodes": [
-                {
-                    "nodeOptions": {
-                        "customTags": {
-                            "session": [],
-                            "message": [],
-                            "user": []
-                        },
-                        "transitionType": "auto",
-                        "isRetriesExceeded": false,
-                        "promptOptions": "required",
-                        "reuseMarkedupPhrases": false,
-                        "interruptOptions": {
-                            "priority": "task"
-                        },
-                        "transitionMode": "initiateCurrentTask",
-                        "inputHandlingOptions": "useAsEntityValue",
-                        "reuseOptions": "1",
-                        "userInputCorrection": true,
-                        "noAutoCorrection": false,
-                        "notForReuse": false,
-                        "contextTags": [],
-                        "message": [],
-                        "errorMessage": []
-                    },
-                    "vNameSpace": [],
-                    "preConditions": [],
-                    "useTaskLevelNs": true,
-                    "nodeId": "intent0",
-                    "type": "intent",
-                    "componentId": "dc-b175f771-c7a4-591f-9428-2b1c0cb557b4",
-                    "transitions": [
-                        {
-                            "default": "",
-                            "metadata": {
-                                "color": "#299d8e",
-                                "connId": "dummy0"
-                            }
-                        }
-                    ],
-                    "metadata": {
-                        "left": 30,
-                        "top": 120
-                    },
-                    "positionMeta": {
-                        "left": 835,
-                        "top": 100
-                    }
-                }
-            ],
-            "lname": "paybill",
-            "isHidden": false,
-            "localeData": {
-                "en": {
-                    "name": "paybill",
-                    "shortDesc": ""
-                }
-            },
-            "groups": [],
-            "isFollowUp": false,
-            "isAbandonment": false,
-            "interruptOptions": {
-                "priority": "bot"
-            },
-            "contextLifeTime": {
-                "options": "close"
-            },
-            "amendConfig": {
-                "priority": "bot"
-            },
-            "sceneRefId": "4e429496-0f51-52ef-87a9-170fefb229d8",
-            "vNameSpace": [
-                "045b9bbe-b347-5ba8-98e4-1345111adf3a"
-            ]
-        },
-        {
             "_id": "dg-20acfa23-9d1c-50ff-864f-2c92a459dc45",
             "refId": "4442ec9b-23bc-5136-8c46-a9debc947431",
             "nodes": [
@@ -1943,7 +1919,7 @@
                     "componentId": "dc-e3230925-437f-5a7a-9002-8c8f31dbc3d3",
                     "transitions": [
                         {
-                            "default": "",
+                            "default": "nd-ent-a2c8477c-c527-48b2-bd70-3e9389da5ecf",
                             "metadata": {
                                 "color": "#676767",
                                 "connId": "dummy-6d753985-a47c-40a0-9c71-9afdf838ddac",
@@ -1956,13 +1932,67 @@
                         "left": 835,
                         "top": 240
                     }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "isRetriesExceeded": false,
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "interruptsEnabled": true,
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "userInputCorrection": true,
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "precedence": "entityOverIntent",
+                        "eventOptions": {
+                            "defaultMaxRetry": {
+                                "retry_limit": 5,
+                                "action": "endOfDialog"
+                            }
+                        },
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "vNameSpace": [],
+                    "preConditions": [],
+                    "useTaskLevelNs": true,
+                    "nodeId": "nd-ent-a2c8477c-c527-48b2-bd70-3e9389da5ecf",
+                    "type": "entity",
+                    "componentId": "dc-67d33da9-ea6a-5579-bea3-0326aafebf8e",
+                    "transitions": [
+                        {
+                            "default": "",
+                            "metadata": {
+                                "color": "#676767",
+                                "connId": "dummy-467f8769-c26c-4c12-8f65-4603ee95b126",
+                                "pathName": "",
+                                "pathsMap": []
+                            }
+                        }
+                    ],
+                    "positionMeta": {
+                        "left": 835,
+                        "top": 380
+                    }
                 }
             ],
-            "lname": "test 2",
+            "lname": "internet",
             "isHidden": false,
             "localeData": {
                 "en": {
-                    "name": "Test 2",
+                    "name": "Internet",
                     "shortDesc": ""
                 }
             },
@@ -1979,6 +2009,84 @@
                 "priority": "bot"
             },
             "sceneRefId": "93b8e0e5-2dfd-5ba1-8700-ff46144cec2f",
+            "vNameSpace": [
+                "045b9bbe-b347-5ba8-98e4-1345111adf3a"
+            ]
+        },
+        {
+            "_id": "dg-4b8df0b9-8f13-50e6-9072-b00d2acf40c8",
+            "refId": "3e83710e-f873-5944-89d9-e523eae07e53",
+            "nodes": [
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "isRetriesExceeded": false,
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "userInputCorrection": true,
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "vNameSpace": [],
+                    "preConditions": [],
+                    "useTaskLevelNs": true,
+                    "nodeId": "intent0",
+                    "type": "intent",
+                    "componentId": "dc-b175f771-c7a4-591f-9428-2b1c0cb557b4",
+                    "transitions": [
+                        {
+                            "default": "",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy0"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 30,
+                        "top": 120
+                    },
+                    "positionMeta": {
+                        "left": 835,
+                        "top": 100
+                    }
+                }
+            ],
+            "lname": "paybill",
+            "isHidden": false,
+            "localeData": {
+                "en": {
+                    "name": "paybill",
+                    "shortDesc": ""
+                }
+            },
+            "groups": [],
+            "isFollowUp": false,
+            "isAbandonment": false,
+            "interruptOptions": {
+                "priority": "bot"
+            },
+            "contextLifeTime": {
+                "options": "close"
+            },
+            "amendConfig": {
+                "priority": "bot"
+            },
+            "sceneRefId": "4e429496-0f51-52ef-87a9-170fefb229d8",
             "vNameSpace": [
                 "045b9bbe-b347-5ba8-98e4-1345111adf3a"
             ]
@@ -2312,7 +2420,7 @@
             "resourceid": "scenes"
         },
         {
-            "_id": "sn-6ffa259f-639e-5b9e-b58c-34ebfc102db2",
+            "_id": "sn-a7681cec-0093-5821-b324-eb69737279c2",
             "botstoreInfo": [
                 {
                     "type": "interactive",
@@ -2321,7 +2429,7 @@
                 }
             ],
             "components": {
-                "snc-9ebb188b-7a85-5aad-9c30-c0d199217eec": {
+                "snc-ca645c2d-5c01-5043-b973-4e412d3e6d5a": {
                     "childs": [],
                     "parentId": null,
                     "seqId": "Id1"
@@ -2330,13 +2438,13 @@
             "currentSeqId": 1,
             "description": "",
             "dialogLinks": {
-                "snc-9ebb188b-7a85-5aad-9c30-c0d199217eec": {
+                "snc-ca645c2d-5c01-5043-b973-4e412d3e6d5a": {
                     "dialogRefId": "4442ec9b-23bc-5136-8c46-a9debc947431"
                 }
             },
             "dialogRefId": "4442ec9b-23bc-5136-8c46-a9debc947431",
             "messageLinks": {},
-            "name": "Test 2",
+            "name": "Internet",
             "refId": "93b8e0e5-2dfd-5ba1-8700-ff46144cec2f",
             "sceneLinkedBy": [],
             "sceneLinks": {},
@@ -2533,7 +2641,7 @@
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         },
         {
-            "_id": "snc-9ebb188b-7a85-5aad-9c30-c0d199217eec",
+            "_id": "snc-ca645c2d-5c01-5043-b973-4e412d3e6d5a",
             "state": 0,
             "msg": {
                 "type": "text",
@@ -2544,7 +2652,7 @@
             "type": "note",
             "refId": "806b3eb9-8bb5-58dc-837b-07afa8e38d54",
             "comments": [],
-            "sceneId": "sn-6ffa259f-639e-5b9e-b58c-34ebfc102db2",
+            "sceneId": "sn-a7681cec-0093-5821-b324-eb69737279c2",
             "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132"
         }
     ],
@@ -2574,7 +2682,7 @@
             "groups": [
                 {
                     "groupName": "greetings",
-                    "groupId": "smg-44799ad2-d377-5930-af93-9f779bc906e0",
+                    "groupId": "smg-90e0f148-11b4-52cf-9859-ff8f2aab2a15",
                     "vNameSpace": [
                         "045b9bbe-b347-5ba8-98e4-1345111adf3a"
                     ],
@@ -2590,25 +2698,25 @@
                                     "channel": "default",
                                     "text": "Glad I could help. ",
                                     "type": "basic",
-                                    "_id": "mt-fa628fc3-c359-5099-882d-f03fdf3b5b0e"
+                                    "_id": "mt-a9b49425-46cd-5426-9f35-66cd5e47067e"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad I could be of assistance. ",
                                     "type": "basic",
-                                    "_id": "mt-095f5eff-d707-5981-bdaa-e26e45670fa9"
+                                    "_id": "mt-f2f5aad5-66f0-5c9f-8966-eadb04c4facb"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad I could be of some help.",
                                     "type": "basic",
-                                    "_id": "mt-63229d91-e0ef-576c-a886-57ca2b2f4aad"
+                                    "_id": "mt-431fc1b4-622d-5238-bda9-7fcde37bf14a"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Always great to be able to help. ",
                                     "type": "basic",
-                                    "_id": "mt-da417ec3-caae-5012-b4f0-675dbe44d66a"
+                                    "_id": "mt-eb3dee4d-840a-50f5-91b4-6e6b157a3e9e"
                                 }
                             ],
                             "state": "published",
@@ -2628,7 +2736,7 @@
                                     "channel": "default",
                                     "text": "I'm good. Thank you.",
                                     "type": "basic",
-                                    "_id": "mt-60ee22c0-4a0d-5afd-b328-f235171c5167"
+                                    "_id": "mt-e2ca303f-8b41-5ba4-bc57-3608fa7e2260"
                                 }
                             ],
                             "state": "published",
@@ -2654,19 +2762,19 @@
                                     "channel": "default",
                                     "text": "Right, then.",
                                     "type": "basic",
-                                    "_id": "mt-ce42b51f-b679-5831-a638-0afc8847ee31"
+                                    "_id": "mt-dbfaf877-57f3-58b3-934b-52b05bd19cab"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK, great! ",
                                     "type": "basic",
-                                    "_id": "mt-21a4534f-8884-50dd-a62f-2883cedf5fc8"
+                                    "_id": "mt-6c2001dc-de5e-5cc8-b25c-f43ec5cb318f"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Alright. ",
                                     "type": "basic",
-                                    "_id": "mt-ecff269d-d27f-5e72-8c42-35b0fc922cb0"
+                                    "_id": "mt-addc3eb3-c16d-55be-a1e9-19b8dadf87b4"
                                 }
                             ],
                             "state": "published",
@@ -2686,13 +2794,13 @@
                                     "channel": "default",
                                     "text": "Have a good one!",
                                     "type": "basic",
-                                    "_id": "mt-4be91aae-d7ce-505e-af61-f7afe01c15bb"
+                                    "_id": "mt-fe2fe3a3-369d-5b4a-946e-692352ee2f2f"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK, bye for now! ",
                                     "type": "basic",
-                                    "_id": "mt-0c962fbb-f7c0-587b-839e-06ae2f31aa07"
+                                    "_id": "mt-fb678c57-589d-5e82-a5e7-8a0c8b1cd4b3"
                                 }
                             ],
                             "state": "published",
@@ -2712,13 +2820,13 @@
                                     "channel": "default",
                                     "text": "Alright. ",
                                     "type": "basic",
-                                    "_id": "mt-0168ca21-c2e4-5ae9-94bf-6d98d6bb4d46"
+                                    "_id": "mt-6cf820ec-8061-5281-9d29-e67eb9aced2a"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Right, then.",
                                     "type": "basic",
-                                    "_id": "mt-9ff26cfc-92d3-5385-a821-b6d68333ba11"
+                                    "_id": "mt-5b21c2c6-d76f-5113-9514-26930b17141b"
                                 }
                             ],
                             "state": "published",
@@ -2741,7 +2849,7 @@
                                     "channel": "default",
                                     "text": "You're welcome.",
                                     "type": "basic",
-                                    "_id": "mt-c51c2aca-50de-5b19-b244-7fc0ac1a9e8a"
+                                    "_id": "mt-83c73883-fafb-5802-9e1e-70c06d007f39"
                                 }
                             ],
                             "state": "published",
@@ -2761,25 +2869,25 @@
                                     "channel": "default",
                                     "text": "Hey :)",
                                     "type": "basic",
-                                    "_id": "mt-5490cb33-dbd7-5b85-916e-3f4d022b9e58"
+                                    "_id": "mt-18007ed4-6421-598a-851c-01ebc715f3f0"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hello ",
                                     "type": "basic",
-                                    "_id": "mt-aea3cd13-ec7b-551c-b6b7-a1864d7496c8"
+                                    "_id": "mt-2da6de86-26d3-5ce0-b677-f21a16a667f7"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hi! ",
                                     "type": "basic",
-                                    "_id": "mt-e075a319-7884-53bf-8b94-e1127f854879"
+                                    "_id": "mt-aa603fec-f5ad-5a6d-b1a0-a2d230ddc97f"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hi there! ",
                                     "type": "basic",
-                                    "_id": "mt-e5f8c468-1e3c-5b15-8972-ca8d1332cf60"
+                                    "_id": "mt-d6ea7649-ea3a-55d2-a258-0ade15bba10c"
                                 }
                             ],
                             "state": "published",
@@ -2799,13 +2907,13 @@
                                     "channel": "default",
                                     "text": "Alright.",
                                     "type": "basic",
-                                    "_id": "mt-ee16cb4a-aa42-5fbd-bf74-77a774f646bd"
+                                    "_id": "mt-35a706c2-1b4a-5f5f-a2f9-5e6abf311ea1"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK. ",
                                     "type": "basic",
-                                    "_id": "mt-8e9584e9-7ab2-5d89-9dac-696be8201cda"
+                                    "_id": "mt-134d9815-1cd4-5016-ad7d-56365dc6fd92"
                                 }
                             ],
                             "state": "published",
@@ -2837,7 +2945,7 @@
                                     "channel": "default",
                                     "text": "I'm <display-bot-name>.",
                                     "type": "basic",
-                                    "_id": "mt-c506be6c-03a9-5211-ae1a-dc57ed4c20e4"
+                                    "_id": "mt-fa2398fb-e014-535a-80c6-6959db9e959b"
                                 }
                             ],
                             "state": "published",
@@ -2857,13 +2965,13 @@
                                     "channel": "default",
                                     "text": "Glad I could help. ",
                                     "type": "basic",
-                                    "_id": "mt-6e8700dd-e02c-587f-9958-0f43fcbcb3fd"
+                                    "_id": "mt-0a37f0c3-3421-5185-8724-4259311cbfaf"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad you are happy.",
                                     "type": "basic",
-                                    "_id": "mt-f26555a3-865a-556d-9ad3-713ac8bc9860"
+                                    "_id": "mt-c74f7951-69ae-53b3-967a-19472f8c969e"
                                 }
                             ],
                             "state": "published",
@@ -2931,19 +3039,19 @@
             "language": "en"
         },
         {
-            "_id": "64b13564289c3c068194a1f7",
+            "_id": "64b13bf8ef7098495d768301",
             "taskId": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
-            "sentence": "I am new uttrance",
-            "taskName": "Test_2",
+            "sentence": "New internet",
+            "taskName": "Internet",
             "type": "DialogIntent",
             "entities": [],
             "language": "en"
         },
         {
-            "_id": "64b13a7b8c03b67b61630c9b",
+            "_id": "64b13bf8ef7098495d768302",
             "taskId": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
-            "sentence": "hi new new new",
-            "taskName": "Test_2",
+            "sentence": "Internet Troubleshooting",
+            "taskName": "Internet",
             "type": "DialogIntent",
             "entities": [],
             "language": "en"
@@ -3041,5 +3149,5 @@
     "feedbackSurveys": [],
     "environmentVersionInfo": "9.1.7",
     "traits": [],
-    "encryptedHash": "ff3fc57fbcf62242f0a6e2e861cba5c4"
+    "encryptedHash": "d457889f32df903e4f0696fbc0b7160b"
 }
