@@ -62,25 +62,25 @@ git push origin main
 # }
 
 # $import_body = '{
-    # "botDefinition" : "'+$bot_definitionid.fileID+'",
-    # "configInfo" : "'+$bot_configid.fileID+'",
-    # "importOptions": {
-    # "tasks": [
-    #     "botTask",
-    #     "knowledgeGraph",
-    #     "smallTalk"
-    #     ],
-    # "nlpData": [
-    #     "nlpSettings",
-    #     "utterances",
-    #     "patterns",
-    #     "standardResponses"
-    #     ],
-    # "settings": [
-    #     "botSettings",
-    #     "botVariables",
-    #     "ivrSettings"
-    #     ]
+#     "botDefinition" : "'+$bot_definitionid.fileID+'",
+#     "configInfo" : "'+$bot_configid.fileID+'",
+#     "importOptions": {
+#     "tasks": [
+#         "botTask",
+#         "knowledgeGraph",
+#         "smallTalk"
+#         ],
+#     "nlpData": [
+#         "nlpSettings",
+#         "utterances",
+#         "patterns",
+#         "standardResponses"
+#         ],
+#     "settings": [
+#         "botSettings",
+#         "botVariables",
+#         "ivrSettings"
+#         ]
 #  }
 
 # }'
