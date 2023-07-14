@@ -73,24 +73,39 @@ git push origin main
 #     "botDefinition" : "'+$bot_definitionid.fileID+'",
 #     "configInfo" : "'+$bot_configid.fileID+'",
 #     "importOptions": {
-#     "tasks": [
-#         "botTask",
-#         "knowledgeGraph",
-#         "smallTalk"
-#         ],
-#     "nlpData": [
-#         "nlpSettings",
+# 	"nlpData": [
+# 		"training_data",
+# 		"bot_synonyms",
+# 		"nlpSettings",
+# 		"defaultDialog",
+# 		"standardResponses",
 #         "utterances",
-#         "patterns",
-#         "standardResponses"
+#         "patterns"
+# 	],
+# 	"settings": [
+# 		"botSettings",
+# 		"ivrSettings",
+# 		"botVariables"
+# 	],
+#       "tasks": [
+#             "botTask",
+#             "knowledgeGraph",
+#             "smallTalk"
 #         ],
-#     "settings": [
-#         "botSettings",
-#         "botVariables",
-#         "ivrSettings"
-#         ]
-#  } 
-# }'  
+# 	"options": {
+# 		"utterances": {
+# 		"append": true,
+# 		"replace": true
+# 		}
+# 	},
+# 	"botComponents": [
+# 		"linkedBots",
+# 		"smallTalk"
+# 	],
+# 	"customDashboard": true
+# } 
+
+# }'
 
 # Start-Sleep -Seconds 1.5
 # $import_res=Invoke-RestMethod -Uri "https://bots.kore.ai/api/public/bot/st-c72008d0-ce30-571b-ba13-1078b89dbef4/import" -Method Post -Body $import_body -Headers $import_header
