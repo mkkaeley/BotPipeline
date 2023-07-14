@@ -23,6 +23,11 @@ $export_body = '{
             "standardResponses"
         ]
     },
+    "subTasks": {
+        "alerts": [],
+        "actions": [],
+        "dialogs": []
+    },
     
     "allTasks": true,
     "customDashboards": true,
