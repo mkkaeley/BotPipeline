@@ -7,12 +7,12 @@ $tmp=Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3c2d6e-128
 Start-Sleep -Seconds 1.5
 $export_res = Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132/mlexport/status" -Method Get -Headers $export_header 
 
-Invoke-WebRequest $export_res.downloadURL -OutFile utterance.json
+Invoke-WebRequest $export_res.downloadURL -OutFile ExportBot/utterance.json
 
 git config --global user.email "darshanavadalia04@gmail.com"
 git config --global user.name "darshana0406"
 
-git add ExportBot/Demobot1_MLUtterances.json
+git add ExportBot/utterance.json
 git commit -m "Bot Files Update"
 
 git push origin main
