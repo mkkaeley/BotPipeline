@@ -42,7 +42,7 @@ Expand-Archive -Path fullexport.zip -DestinationPath ./ExportBot  -Force
 
 git add .
 git commit -m "Bot Files Update"
- 
+
 git push origin main
 
 
@@ -62,39 +62,27 @@ git push origin main
 # }
 
 # $import_body = '{
-#     "botDefinition" : "'+$bot_definitionid.fileID+'",
-#     "configInfo" : "'+$bot_configid.fileID+'",
-#     "importOptions": {
-#         "tasks": [
-#             "botTask",
-#             "knowledgeGraph",
-#             "smallTalk"
-#             ],
-#         "nlpData": [
-#             "training_data",
-#             "bot_synonyms",
-#             "nlpSettings",
-#             "defaultDialog",
-#             "standardResponses"
-#             ],
-#         "settings": [
-#             "botSettings",
-#             "ivrSettings",
-#             "botVariables",
-#             "ivrSettings"
-#             ],
-#         "options": {
-#             "utterances": {
-#             "append": true,
-#             "replace": true
-#             }
-#         },
-#         "botComponents": [
-#             "linkedBots",
-#             "smallTalk"
-#         ],
-#         "customDashboard": true
-#     }
+    # "botDefinition" : "'+$bot_definitionid.fileID+'",
+    # "configInfo" : "'+$bot_configid.fileID+'",
+    # "importOptions": {
+    # "tasks": [
+    #     "botTask",
+    #     "knowledgeGraph",
+    #     "smallTalk"
+    #     ],
+    # "nlpData": [
+    #     "nlpSettings",
+    #     "utterances",
+    #     "patterns",
+    #     "standardResponses"
+    #     ],
+    # "settings": [
+    #     "botSettings",
+    #     "botVariables",
+    #     "ivrSettings"
+    #     ]
+#  }
+
 # }'
 
 # Start-Sleep -Seconds 1.5
