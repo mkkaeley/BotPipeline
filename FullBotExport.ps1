@@ -6,22 +6,50 @@ $export_header = @{
 $export_body = '{
     "exportType": "published",
     "exportOptions": {
-        "settings": [
-            "botSettings",
-            "botVariables",
-            "ivrSettings"
-        ],
-        "tasks": [
+        # "settings": [
+        #     "botSettings",
+        #     "botVariables",
+        #     "ivrSettings"
+        # ],
+        # "tasks": [
+        #     "botTask",
+        #     "knowledgeGraph",
+        #     "smallTalk"
+        # ],
+        # "nlpData": [
+        #     "nlpSettings",
+        #     "utterances",
+        #     "patterns",
+        #     "standardResponses"
+        # ]
+         "tasks": [
             "botTask",
             "knowledgeGraph",
             "smallTalk"
-        ],
+            ],
         "nlpData": [
+            "training_data",
+            "bot_synonyms",
             "nlpSettings",
-            "utterances",
-            "patterns",
+            "defaultDialog",
             "standardResponses"
-        ]
+            ],
+        "settings": [
+            "botSettings",
+            "ivrSettings",
+            "botVariables",
+            "ivrSettings"
+            ],
+        "options": {
+            "utterances": {
+            "append": true,
+            "replace": true
+            }
+        },
+        "botComponents": [
+            "linkedBots",
+            "smallTalk"
+        ],
     },
     
     "allTasks": true,
