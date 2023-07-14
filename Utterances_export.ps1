@@ -12,7 +12,7 @@ Invoke-WebRequest $export_res.downloadURL -OutFile ExportBot/utterance.json
 git config --global user.email "darshanavadalia04@gmail.com"
 git config --global user.name "darshana0406"
 
-git add ExportBot/utterance.json
+git add .
 git commit -m "Bot Files Update"
 
 git push origin main

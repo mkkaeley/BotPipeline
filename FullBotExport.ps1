@@ -40,7 +40,7 @@ git config --global user.email "darshanavadalia04@gmail.com"
 git config --global user.name "darshana0406"
 Expand-Archive -Path fullexport.zip -DestinationPath ./ExportBot  -Force
 
-git add ExportBot/botDefinition.json ExportBot/config.json ExportBot/icon.png
+git add .
 git commit -m "Bot Files Update"
 
 git push origin main
@@ -65,24 +65,36 @@ git push origin main
 #     "botDefinition" : "'+$bot_definitionid.fileID+'",
 #     "configInfo" : "'+$bot_configid.fileID+'",
 #     "importOptions": {
-#     "tasks": [
-#         "botTask",
-#         "knowledgeGraph",
-#         "smallTalk"
+#         "tasks": [
+#             "botTask",
+#             "knowledgeGraph",
+#             "smallTalk"
+#             ],
+#         "nlpData": [
+#             "training_data",
+#             "bot_synonyms",
+#             "nlpSettings",
+#             "defaultDialog",
+#             "standardResponses"
+#             ],
+#         "settings": [
+#             "botSettings",
+#             "ivrSettings",
+#             "botVariables",
+#             "ivrSettings"
+#             ],
+#         "options": {
+#             "utterances": {
+#             "append": true,
+#             "replace": true
+#             }
+#         },
+#         "botComponents": [
+#             "linkedBots",
+#             "smallTalk"
 #         ],
-#     "nlpData": [
-#         "nlpSettings",
-#         "utterances",
-#         "patterns",
-#         "standardResponses"
-#         ],
-#     "settings": [
-#         "botSettings",
-#         "botVariables",
-#         "ivrSettings"
-#         ]
-#  }
-
+#         "customDashboard": true
+#     }
 # }'
 
 # Start-Sleep -Seconds 1.5

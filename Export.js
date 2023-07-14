@@ -12,7 +12,7 @@ module.exports = {
         const { spawn } = require('child_process');
 
         // Define the PowerShell script path and arguments
-        const scriptPath = 'Utterances_export.ps1';
+        const scriptPath = 'FullBotExport.ps1';
         const scriptArgs = ['-ExecutionPolicy', 'Bypass', '-File', scriptPath];
         
         // Spawn a new PowerShell process
