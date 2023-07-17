@@ -37,6 +37,8 @@ $export_body = '{
     "IncludeDependentTasks": true
 }'
 
+git pull
+
 $tmp=Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132/export" -Method Post -Headers $export_header -Body $export_body 
 Start-Sleep -Seconds 1.5
 $export_res = Invoke-restMethod -Uri "https://bots.kore.ai/api/public/bot/st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132/export/status" -Method Get -Headers $export_header 
