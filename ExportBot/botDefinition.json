@@ -1013,7 +1013,7 @@
                     "channel": "default",
                     "createdBy": "Thu Jun 22 2023 05:40:21 GMT+0000 (Coordinated Universal Time)",
                     "createdOn": "Thu Jun 22 2023 05:42:16 GMT+0000 (Coordinated Universal Time)",
-                    "lMod": "Mon Jul 17 2023 12:17:39 GMT+0000 (Coordinated Universal Time)",
+                    "lMod": "Mon Jul 17 2023 12:21:13 GMT+0000 (Coordinated Universal Time)",
                     "lModBy": "Thu Jun 22 2023 05:40:21 GMT+0000 (Coordinated Universal Time)",
                     "localeData": {
                         "en": {
@@ -2923,7 +2923,7 @@
             "groups": [
                 {
                     "groupName": "greetings",
-                    "groupId": "smg-043e4e89-06f1-5011-882e-d64784c032ce",
+                    "groupId": "smg-f150c83b-3398-56e5-a2a8-effcb9ed8e48",
                     "vNameSpace": [
                         "045b9bbe-b347-5ba8-98e4-1345111adf3a"
                     ],
@@ -2939,25 +2939,25 @@
                                     "channel": "default",
                                     "text": "Glad I could help. ",
                                     "type": "basic",
-                                    "_id": "mt-7afaf609-3441-553f-a21c-62726bb52432"
+                                    "_id": "mt-82371fcc-56f3-5b08-b301-c0ab6f8d57cd"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad I could be of assistance. ",
                                     "type": "basic",
-                                    "_id": "mt-f14e9312-fcd5-5de6-88ff-c353d100a918"
+                                    "_id": "mt-8eccd49e-1b9f-5926-a145-c93ff3fa3909"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad I could be of some help.",
                                     "type": "basic",
-                                    "_id": "mt-b370305e-d3b2-5eb4-9695-8449395036cf"
+                                    "_id": "mt-23ae1ff0-ebf0-5d10-bd2a-87edc74ff927"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Always great to be able to help. ",
                                     "type": "basic",
-                                    "_id": "mt-40ef3996-3d52-5b9a-9788-1a9d9d112347"
+                                    "_id": "mt-ef4e7cb8-5ec8-5a8b-9a31-df5af209d207"
                                 }
                             ],
                             "state": "published",
@@ -2977,7 +2977,7 @@
                                     "channel": "default",
                                     "text": "I'm good. Thank you.",
                                     "type": "basic",
-                                    "_id": "mt-ae4f7233-5ac0-5a1b-8a40-b44b6a277ee1"
+                                    "_id": "mt-388924a0-e115-5607-ba18-000a2bf5ab70"
                                 }
                             ],
                             "state": "published",
@@ -3003,19 +3003,19 @@
                                     "channel": "default",
                                     "text": "Right, then.",
                                     "type": "basic",
-                                    "_id": "mt-8d83bc1f-8b88-51a1-bbf2-f10db243e56a"
+                                    "_id": "mt-8ed0664a-8881-5b6f-8b06-72e775e7edc7"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK, great! ",
                                     "type": "basic",
-                                    "_id": "mt-9d2d2e0f-cf7f-541a-b4d7-b1b6248028ba"
+                                    "_id": "mt-1f85169a-bc77-5225-a26c-f5cd5c76f7a7"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Alright. ",
                                     "type": "basic",
-                                    "_id": "mt-ce9a5efd-4c12-5367-9c0c-7240dfed2be0"
+                                    "_id": "mt-14c3d48a-858a-5f6e-992e-e3a2ada8c308"
                                 }
                             ],
                             "state": "published",
@@ -3035,13 +3035,13 @@
                                     "channel": "default",
                                     "text": "Have a good one!",
                                     "type": "basic",
-                                    "_id": "mt-04d05b17-267b-5e3a-9322-a972f1fa6005"
+                                    "_id": "mt-c84fa06d-caef-57b9-a40f-8e12d7d6bc53"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK, bye for now! ",
                                     "type": "basic",
-                                    "_id": "mt-104c68e5-eba2-5e1b-b45a-961adb617619"
+                                    "_id": "mt-7a181fb5-371b-517e-be61-5bc97526c420"
                                 }
                             ],
                             "state": "published",
@@ -3061,13 +3061,13 @@
                                     "channel": "default",
                                     "text": "Alright. ",
                                     "type": "basic",
-                                    "_id": "mt-57a4cf14-199b-5e12-b826-632ee707ee00"
+                                    "_id": "mt-eac8b4c6-b1ab-54cb-8225-3cd826e817e2"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Right, then.",
                                     "type": "basic",
-                                    "_id": "mt-06093585-7101-50c2-adeb-3198c641ea8d"
+                                    "_id": "mt-fdbd1d9a-eefd-515d-ac38-503df30efdff"
                                 }
                             ],
                             "state": "published",
@@ -3090,7 +3090,7 @@
                                     "channel": "default",
                                     "text": "You're welcome.",
                                     "type": "basic",
-                                    "_id": "mt-59a3e6ca-4b7d-5819-bd53-2bd2897c214f"
+                                    "_id": "mt-eb7359d2-7601-595b-a091-61867f2a9add"
                                 }
                             ],
                             "state": "published",
@@ -3110,25 +3110,25 @@
                                     "channel": "default",
                                     "text": "Hey :)",
                                     "type": "basic",
-                                    "_id": "mt-94e98f5c-9f1d-54a9-a17e-4a7df98e70d4"
+                                    "_id": "mt-6c5666e1-0622-5649-82d7-5810f2a36ad3"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hello ",
                                     "type": "basic",
-                                    "_id": "mt-5c95be95-dc05-5f41-a100-f1954f6a0413"
+                                    "_id": "mt-bd158ab4-b9d8-5dda-a580-014a61bd2840"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hi! ",
                                     "type": "basic",
-                                    "_id": "mt-3d240fc7-04f2-5bdc-a040-d50bbff5ec41"
+                                    "_id": "mt-84c553aa-88b9-58b9-b56b-0e6861452e83"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Hi there! ",
                                     "type": "basic",
-                                    "_id": "mt-e8f81ef8-ef54-525f-a7a6-947774506f8b"
+                                    "_id": "mt-95257520-69c6-552a-88d3-ce032b5f1fc6"
                                 }
                             ],
                             "state": "published",
@@ -3148,13 +3148,13 @@
                                     "channel": "default",
                                     "text": "Alright.",
                                     "type": "basic",
-                                    "_id": "mt-ec141ff9-9e83-57bf-9208-b1063a8e73ad"
+                                    "_id": "mt-5e9ea0d6-e860-54c5-b176-0fe797433c34"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "OK. ",
                                     "type": "basic",
-                                    "_id": "mt-6caf1121-7722-5486-8929-7a84eb6f2b3d"
+                                    "_id": "mt-2658cc8b-15f3-5e63-af58-9e97152fdf28"
                                 }
                             ],
                             "state": "published",
@@ -3186,7 +3186,7 @@
                                     "channel": "default",
                                     "text": "I'm <display-bot-name>.",
                                     "type": "basic",
-                                    "_id": "mt-3cf60737-f178-5b0a-b900-aa594b37c365"
+                                    "_id": "mt-57bcb39b-e1a3-5fd9-9f22-8c6899c6c8ab"
                                 }
                             ],
                             "state": "published",
@@ -3206,13 +3206,13 @@
                                     "channel": "default",
                                     "text": "Glad I could help. ",
                                     "type": "basic",
-                                    "_id": "mt-7a7af16a-a731-5376-9be0-08b986304226"
+                                    "_id": "mt-58cc9f6c-a60e-5322-bb6f-65951df1d752"
                                 },
                                 {
                                     "channel": "default",
                                     "text": "Glad you are happy.",
                                     "type": "basic",
-                                    "_id": "mt-644137f8-51d7-5f3f-9ec0-4159955bca23"
+                                    "_id": "mt-8ccb5e56-33ee-5483-bf4a-7a89c6184aef"
                                 }
                             ],
                             "state": "published",
@@ -3428,5 +3428,5 @@
     "feedbackSurveys": [],
     "environmentVersionInfo": "9.1.7",
     "traits": [],
-    "encryptedHash": "c1f89d27baacf89260e026712fc5b48f"
+    "encryptedHash": "088279c2a0dd39fe26dc10457b9adf7c"
 }
