@@ -1,87 +1,119 @@
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.util.Base64;
+import org.json.JSONObject;
 
 public class BotJava {
-
     public static void main(String[] args) {
-
-        String url = "https://bots.kore.ai/api/public/uploadfile";
-
-        String botDefinitionAuth = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A";
-        String botDefinitionFilePath = "botDefinition.json";
-        String botDefinitionFileContext = "bulkImport";
-        String botDefinitionFileExtension = "json";
-
-        String filePath = "botDefinition.json";
-
         try {
+            String auth = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
+            String fileUploadURL = "https://bots.kore.ai/api/public/uploadfile";
+            String importURL = "https://bots.kore.ai/api/public/bot/st-c99808ed-b936-5b7d-a49f-a0fad24a1a00/import";
 
-            File file = new File(filePath);
-            byte[] fileContent = readFileToByteArray(file);
+            String botDefinitionFileID = uploadFile(fileUploadURL, auth, "botDefinition.json", "bulkImport", "json");
+            String configInfoFileID = uploadFile(fileUploadURL, auth, "config.json", "bulkImport", "json");
 
-            URL requestUrl = new URL(url);
-            HttpURLConnection connection = (HttpURLConnection) requestUrl.openConnection();
+            String importOptions = "{ \"nlpData\": [\"training_data\",\"bot_synonyms\",\"nlpSettings\",\"defaultDialog\",\"standardResponses\",\"utterances\",\"patterns\"],\"settings\": [\"botSettings\",\"ivrSettings\",\"botVariables\"],\"tasks\": [\"botTask\",\"knowledgeGraph\",\"smallTalk\"],\"options\": {\"utterances\": {\"append\": true,\"replace\": true}},\"botComponents\": [\"linkedBots\",\"smallTalk\"],\"customDashboard\": true }";
+            JSONObject importBody = new JSONObject();
+            importBody.put("botDefinition", botDefinitionFileID);
+            importBody.put("configInfo", configInfoFileID);
+            importBody.put("importOptions", new JSONObject(importOptions));
 
-            String authString = botDefinitionAuth + ":" + botDefinitionFilePath + ":" + botDefinitionFileContext + ":"
-                    + botDefinitionFileExtension;
-            String encodedAuth = Base64.getEncoder().encodeToString(authString.getBytes(StandardCharsets.UTF_8));
-            String authHeader = "Basic " + encodedAuth;
-            connection.setRequestProperty("Authorization", authHeader);
+            Thread.sleep(1500);
+            String importID = invokeRestMethod(importURL, "POST", importBody.toString(), auth, "application/json");
 
-            connection.setDoInput(true);
-            connection.setDoOutput(true);
+            Thread.sleep(1500);
+            String statusURL = "https://bots.kore.ai/api/public/bot/import/status/" + importID;
+            JSONObject status = new JSONObject(invokeRestMethod(statusURL, "GET", null, auth, null));
 
-            connection.setRequestMethod("POST");
-
-            connection.setRequestProperty("Content-Type", "multipart/form-data");
-
-            try (OutputStream outputStream = connection.getOutputStream()) {
-                outputStream.write(fileContent);
-                outputStream.flush();
-            }
-
-            int responseCode = connection.getResponseCode();
-            if (responseCode == HttpURLConnection.HTTP_OK) {
-
-                try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
-                    String line;
-                    StringBuilder response = new StringBuilder();
-                    while ((line = reader.readLine()) != null) {
-                        response.append(line);
-                    }
-                    System.out.println("Response: " + response.toString());
-                }
-            } else {
-
-                System.out.println("Error: " + responseCode );
-                System.out.println(connection.getErrorStream());
-            }
-
-            connection.disconnect();
-        } catch (IOException e) {
+            System.out.println("Import status: " + status.getString("status"));
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private static byte[] readFileToByteArray(File file) throws IOException {
-        try (InputStream inputStream = new FileInputStream(file)) {
-            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-            byte[] buffer = new byte[4096];
-            int bytesRead;
-            while ((bytesRead = inputStream.read(buffer)) != -1) {
-                outputStream.write(buffer, 0, bytesRead);
+    private static String uploadFile(String url, String auth, String fileName, String fileContext, String fileExtension) throws IOException {
+        URL uploadURL = new URL(url);
+        HttpURLConnection connection = (HttpURLConnection) uploadURL.openConnection();
+        connection.setRequestMethod("POST");
+        connection.setRequestProperty("auth", auth);
+        connection.setRequestProperty("Content-Type", "multipart/form-data");
+        connection.setDoOutput(true);
+
+        File file = new File(fileName);
+        String boundary = Long.toHexString(System.currentTimeMillis());
+        String CRLF = "\r\n";
+
+        connection.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
+
+        try (OutputStream output = connection.getOutputStream();
+             PrintWriter writer = new PrintWriter(new OutputStreamWriter(output, "UTF-8"), true);
+             BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)))) {
+
+            // Send form data
+            writer.append("--").append(boundary).append(CRLF);
+            writer.append("Content-Disposition: form-data; name=\"file\"; filename=\"" + fileName + "\"").append(CRLF);
+            writer.append("Content-Type: " + HttpURLConnection.guessContentTypeFromName(fileName)).append(CRLF);
+            writer.append("Content-Transfer-Encoding: binary").append(CRLF);
+            writer.append(CRLF).flush();
+
+            // Send file data
+            String line;
+            while ((line = reader.readLine()) != null) {
+                output.write(line.getBytes());
             }
-            return outputStream.toByteArray();
+            output.flush(); // Important before continuing with writer!
+
+            // CRLF must be appended at the end to signal end of boundary
+            writer.append(CRLF).flush();
+            writer.append("--").append(boundary).append("--").append(CRLF);
+            writer.close();
+        }
+
+        int responseCode = connection.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+                StringBuilder response = new StringBuilder();
+                String inputLine;
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                return response.toString();
+            }
+        } else {
+            throw new IOException("File upload failed with response code: " + responseCode);
+        }
+    }
+
+    private static String invokeRestMethod(String url, String method, String body, String auth, String contentType) throws IOException {
+        URL restURL = new URL(url);
+        HttpURLConnection connection = (HttpURLConnection) restURL.openConnection();
+        connection.setRequestMethod(method);
+        connection.setRequestProperty("auth", auth);
+
+        if (contentType != null) {
+            connection.setRequestProperty("Content-Type", contentType);
+        }
+
+        if (body != null) {
+            connection.setDoOutput(true);
+            try (OutputStream outputStream = connection.getOutputStream()) {
+                outputStream.write(body.getBytes());
+            }
+        }
+
+        int responseCode = connection.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+                StringBuilder response = new StringBuilder();
+                String inputLine;
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                return response.toString();
+            }
+        } else {
+            throw new IOException("HTTP request failed with response code: " + responseCode);
         }
     }
 }
