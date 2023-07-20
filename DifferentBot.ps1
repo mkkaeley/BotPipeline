@@ -55,7 +55,7 @@ git commit -m "Bot Files Update"
 
 git push origin main
 
-# Upload file commands
+
 # cd ExportBot
 # $upload_res_bot= curl.exe --silent -X POST https://bots.kore.ai/api/public/uploadfile -H 'auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw'   -H 'content-type: multipart/form-data' -F file=@botDefinition.json -F fileContext=bulkImport -F fileExtension=json  
 # $bot_definitionid= $upload_res_bot | ConvertFrom-Json 
@@ -117,7 +117,6 @@ git push origin main
 
 # Start-Sleep -Seconds 5
 
-# import files status
 
 # $status_url = "https://bots.kore.ai/api/public/bot/import/status/"+$import_res._id
 # $status=Invoke-RestMethod -Uri $status_url -Headers $import_header

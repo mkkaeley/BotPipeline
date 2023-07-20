@@ -9,6 +9,21 @@ module.exports = {
         var event = data.eventType;
         console.log("event----------->", event);       
         
+
+        // //---------------------------Running Java File (For that we rquired Child process and cmd is "npm install child_process")
+        // const { exec } = require('child_process');
+
+        // exec('java BotJava', (error, stdout, stderr) => {
+        //   if (error) {
+        //     console.error('Error executing Java file:', error);
+        //     return;
+        //   }
+
+        //   console.log('Java file output:', stdout);
+        // });
+
+
+       // //--------------------Running Powershell File 
         const { spawn } = require('child_process');
 
         // Define the PowerShell script path and arguments
@@ -36,13 +51,14 @@ module.exports = {
           }
         });
         
-      //   var username = "darshana",
-      //   password = "11e963401c62a5ff805edfdf767d7dacac";
-      //   const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Export_Checkin/build?token=12345";
-        
-      //   request({ url: exurl }, (err, res) => {
-      //     console.log(res.statusCode);   
-      // }); 
+        // // ----------- Direct trigger jenkins job
+        //   var username = "darshana",
+        //   password = "113e0e92afad783c190fc5d3d7eeef0cc0";
+        //   const exurl = "http://"+username+":"+password+"@122.170.77.44:8003/job/Export_Checkin/build?token=test";
+          
+        //   request({ url: exurl }, (err, res) => {
+        //     console.log(res.statusCode);   
+        // }); 
     }
 };
 
