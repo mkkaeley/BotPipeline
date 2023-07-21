@@ -12,7 +12,7 @@ module.exports = {
 
         // //---------------------------Running Java File (For that we rquired Child process and cmd is "npm install child_process")
         const { exec } = require('child_process');
-           exec('java -cp "C:\\Users\\gg\\AppData\\Roaming\\Code\\User\\workspaceStorage\\af7354454b49f903ff1000875a90235f\\redhat.java\\jdt_ws\\Botkit-Master-Demo_78b8d7eb\\bin;c:\\Users\\gg\\Downloads\\Java\\json-20230618.jar" BotJava', (error, stdout, stderr) => {
+           exec('java -cp "C:\\Users\\gg\\AppData\\Roaming\\Code\\User\\workspaceStorage\\af7354454b49f903ff1000875a90235f\\redhat.java\\jdt_ws\\Botkit-Master-Demo_78b8d7eb\\bin;c:\\Users\\gg\\Downloads\\Java\\json-20230618.jar" ExportJava', (error, stdout, stderr) => {
           if (error) {
             console.error('Error executing Java file:', error);
             return;

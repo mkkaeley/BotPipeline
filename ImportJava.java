@@ -19,16 +19,53 @@ public class ImportJava {
 			String auth = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
 
 			// Create the JSON payload
-			String botDefinitionId = "64ba2d8a308ddb8cbb59d144";
-			String configInfoId = "64ba2d7ba4909c0633241fca";
+			String botDefinitionId = "64ba56dd544786514683e788";
+			String configInfoId = "64ba56d4fd83c29b0158150a";
 
-			String importBody = "{\n" + "  \"botDefinition\": \"" + botDefinitionId + "\",\n" + "  \"configInfo\": \""
-					+ configInfoId + "\",\n" + "  \"importOptions\": {\n" + "    \"tasks\": [\n"
-					+ "      \"botTask\",\n" + "      \"knowledgeGraph\",\n" + "      \"smallTalk\"\n" + "    ],\n"
-					+ "    \"nlpData\": [\n" + "      \"nlpSettings\",\n" + "      \"utterances\",\n"
-					+ "      \"patterns\",\n" + "      \"standardResponses\"\n" + "    ],\n" + "    \"settings\": [\n"
-					+ "      \"botSettings\",\n" + "      \"botVariables\",\n" + "      \"ivrSettings\"\n" + "    ]\n"
-					+ "  }\n" + "}";
+			// String importBody = "{\n" + "  \"botDefinition\": \"" + botDefinitionId + "\",\n" + "  \"configInfo\": \""
+			// 		+ configInfoId + "\",\n" + "  \"importOptions\": {\n" + "    \"tasks\": [\n"
+			// 		+ "      \"botTask\",\n" + "      \"knowledgeGraph\",\n" + "      \"smallTalk\"\n" + "    ],\n"
+			// 		+ "    \"nlpData\": [\n" + "      \"nlpSettings\",\n" + "      \"utterances\",\n"
+			// 		+ "      \"patterns\",\n" + "      \"standardResponses\"\n" + "    ],\n" + "    \"settings\": [\n"
+			// 		+ "      \"botSettings\",\n" + "      \"botVariables\",\n" + "      \"ivrSettings\"\n" + "    ]\n"
+			// 		+ "  }\n" + "}";
+
+					String importBody = "{\n" +
+                    "    \"botDefinition\": \"" + botDefinitionId + "\",\n" +
+                    "    \"configInfo\": \"" + configInfoId  + "\",\n" +
+                    "    \"importOptions\": {\n" +
+                    "        \"nlpData\": [\n" +
+                    "            \"training_data\",\n" +
+                    "            \"bot_synonyms\",\n" +
+                    "            \"nlpSettings\",\n" +
+                    "            \"defaultDialog\",\n" +
+                    "            \"standardResponses\",\n" +
+                    "            \"utterances\",\n" +
+                    "            \"patterns\"\n" +
+                    "        ],\n" +
+                    "        \"settings\": [\n" +
+                    "            \"botSettings\",\n" +
+                    "            \"ivrSettings\",\n" +
+                    "            \"botVariables\"\n" +
+                    "        ],\n" +
+                    "        \"tasks\": [\n" +
+                    "            \"botTask\",\n" +
+                    "            \"knowledgeGraph\",\n" +
+                    "            \"smallTalk\"\n" +
+                    "        ],\n" +
+                    "        \"options\": {\n" +
+                    "            \"utterances\": {\n" +
+                    "                \"append\": true,\n" +
+                    "                \"replace\": true\n" +
+                    "            }\n" +
+                    "        },\n" +
+                    "        \"botComponents\": [\n" +
+                    "            \"linkedBots\",\n" +
+                    "            \"smallTalk\"\n" +
+                    "        ],\n" +
+                    "        \"customDashboard\": true\n" +
+                    "    }\n" +
+                    "}";
 
 			// Create the HttpURLConnection
 			URL url = new URL("https://bots.kore.ai/api/public/bot/st-c99808ed-b936-5b7d-a49f-a0fad24a1a00/import");
