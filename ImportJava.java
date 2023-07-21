@@ -19,8 +19,8 @@ public class ImportJava {
 			String auth = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
 
 			// Create the JSON payload
-			String botDefinitionId = "64ba2318d565a1059f7751a2";
-			String configInfoId = "64ba2306fd83c29b0155d6fa";
+			String botDefinitionId = "64ba24579344045113dcd257";
+			String configInfoId = "64ba24532690098d304a2bea";
 
 			String importBody = "{\n" + "  \"botDefinition\": \"" + botDefinitionId + "\",\n" + "  \"configInfo\": \""
 					+ configInfoId + "\",\n" + "  \"importOptions\": {\n" + "    \"tasks\": [\n"
@@ -31,7 +31,7 @@ public class ImportJava {
 					+ "  }\n" + "}";
 
 			// Create the HttpURLConnection
-			URL url = new URL("https://bots.kore.ai/api/public/bot/st-c72008d0-ce30-571b-ba13-1078b89dbef4/import");
+			URL url = new URL("https://bots.kore.ai/api/public/bot/st-c99808ed-b936-5b7d-a49f-a0fad24a1a00/import");
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("POST");
 			connection.setRequestProperty("auth", auth);
