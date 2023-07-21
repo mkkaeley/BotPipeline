@@ -19,8 +19,8 @@ public class ImportJava {
 			String auth = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
 
 			// Create the JSON payload
-			String botDefinitionId = "64ba56dd544786514683e788";
-			String configInfoId = "64ba56d4fd83c29b0158150a";
+			String botDefinitionId = "64ba8b242801848d1ef53973";
+			String configInfoId = "64ba8b248f3a5bf521aac364";
 
 			// String importBody = "{\n" + "  \"botDefinition\": \"" + botDefinitionId + "\",\n" + "  \"configInfo\": \""
 			// 		+ configInfoId + "\",\n" + "  \"importOptions\": {\n" + "    \"tasks\": [\n"
