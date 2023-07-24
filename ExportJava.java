@@ -138,7 +138,7 @@ public class ExportJava {
             e.printStackTrace();
         }
         String gitRepoPath = "."; // Replace this with the actual path to your Git repository
-        String commitMessage = "Your commit message goes here";
+        String commitMessage = "Changes Updated";
 
         // Git commands
         String gitAdd = "git add .";
