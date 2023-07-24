@@ -25,14 +25,6 @@ public class ImportJava {
 			// String configInfoId = "64baa482843d5b9bd9be0ee6";
 
 
-			// String importBody = "{\n" + "  \"botDefinition\": \"" + botDefinitionId + "\",\n" + "  \"configInfo\": \""
-			// 		+ configInfoId + "\",\n" + "  \"importOptions\": {\n" + "    \"tasks\": [\n"
-			// 		+ "      \"botTask\",\n" + "      \"knowledgeGraph\",\n" + "      \"smallTalk\"\n" + "    ],\n"
-			// 		+ "    \"nlpData\": [\n" + "      \"nlpSettings\",\n" + "      \"utterances\",\n"
-			// 		+ "      \"patterns\",\n" + "      \"standardResponses\"\n" + "    ],\n" + "    \"settings\": [\n"
-			// 		+ "      \"botSettings\",\n" + "      \"botVariables\",\n" + "      \"ivrSettings\"\n" + "    ]\n"
-			// 		+ "  }\n" + "}";
-
 					String importBody = "{\n" +
                     "    \"botDefinition\": \"" + botDefinitionId + "\",\n" +
                     "    \"configInfo\": \"" + configInfoId  + "\",\n" +

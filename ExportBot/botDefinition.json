@@ -920,21 +920,6 @@
     "enableNegativePatterns": false,
     "advancedNLSettings": [
         {
-            "_id": "anls-223265dd-f338-560b-9a45-08d306c7c32c",
-            "isCustom": false,
-            "type": 1,
-            "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132",
-            "language": "en",
-            "nlpEngine": "ML",
-            "configurationKeyName": "network",
-            "configurationValue": "Few-shot Model (Kore.ai Hosted Embeddings)",
-            "requiresTraining": true,
-            "state": "published",
-            "refId": "9bd70d94-59cf-502a-bb52-3e97f5339237",
-            "lastModifiedOn": "2023-06-22T05:40:21.411Z",
-            "__v": 0
-        },
-        {
             "_id": "anls-2981beda-86a2-546b-8445-1267e2224704",
             "isCustom": false,
             "type": 1,
@@ -947,6 +932,21 @@
             "state": "published",
             "refId": "83dae4e0-0e1e-5c4f-87ed-e674cce1487c",
             "lastModifiedOn": "2023-06-22T05:40:21.422Z",
+            "__v": 0
+        },
+        {
+            "_id": "anls-223265dd-f338-560b-9a45-08d306c7c32c",
+            "isCustom": false,
+            "type": 1,
+            "streamId": "st-fa3c2d6e-128d-5e18-a60a-eca34e4a9132",
+            "language": "en",
+            "nlpEngine": "ML",
+            "configurationKeyName": "network",
+            "configurationValue": "Few-shot Model (Kore.ai Hosted Embeddings)",
+            "requiresTraining": true,
+            "state": "published",
+            "refId": "9bd70d94-59cf-502a-bb52-3e97f5339237",
+            "lastModifiedOn": "2023-06-22T05:40:21.411Z",
             "__v": 0
         },
         {
@@ -3621,18 +3621,18 @@
             "language": "en"
         },
         {
-            "_id": "64b517bf2f04d61919336802",
+            "_id": "64b517bf2f04d61919336803",
             "taskId": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
-            "sentence": "Internet Trouble",
+            "sentence": "internet internet internet",
             "taskName": "InternetTroubleshooting",
             "type": "DialogIntent",
             "entities": [],
             "language": "en"
         },
         {
-            "_id": "64b517bf2f04d61919336803",
+            "_id": "64b517bf2f04d61919336802",
             "taskId": "dc-d3eba954-0da6-5977-9eb9-a9ebadfd1564",
-            "sentence": "internet internet internet",
+            "sentence": "Internet Trouble",
             "taskName": "InternetTroubleshooting",
             "type": "DialogIntent",
             "entities": [],
@@ -3753,5 +3753,5 @@
     "feedbackSurveys": [],
     "environmentVersionInfo": "9.1.7",
     "traits": [],
-    "encryptedHash": "f4d4af4a7b5292f2fe9848b16e916c46"
+    "encryptedHash": "205315cb53cdeb86e30ec9a3d5533a31"
 }
