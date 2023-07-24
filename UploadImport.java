@@ -100,7 +100,7 @@ public class UploadImport {
 					+ "            \"smallTalk\"\n" + "        ],\n" + "        \"customDashboard\": true\n" + "    }\n"
 					+ "}";
 
-			//https://bots.kore.ai/api/public/bot/st-c72008d0-ce30-571b-ba13-1078b89dbef4/import
+			
 			// Create the HttpURLConnection
 			String uploadToken ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
 			URL impUrl = new URL("https://bots.kore.ai/api/public/bot/st-c99808ed-b936-5b7d-a49f-a0fad24a1a00/import");
