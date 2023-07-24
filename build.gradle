@@ -18,6 +18,6 @@ task compileJava(type: JavaCompile) {
 }
 
 task runJava(type: JavaExec, dependsOn: compileJava) {
-    main = 'com.example.UploadImport' // Replace with the fully qualified name of your main class
+    main = 'UploadImport' // Replace with the fully qualified name of your main class
     classpath = sourceSets.main.runtimeClasspath
 }
