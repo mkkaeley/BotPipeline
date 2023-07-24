@@ -13,7 +13,7 @@ public class UploadFile {
 
     public static void main(String[] args) throws IOException {
         String apiUrl = "https://bots.kore.ai/api/public/uploadfile";
-        String authToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A";
+        String authToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
         String[] fileNames = { "C:/Users/gg/Documents/Darshana-infy/Botkit-Master-Demo/ExportBot/botDefinition.json",
                 "C:/Users/gg/Documents/Darshana-infy/Botkit-Master-Demo/ExportBot/config.json" };
         String fileContext = "bulkImport";
