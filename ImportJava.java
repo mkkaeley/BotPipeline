@@ -21,6 +21,9 @@ public class ImportJava {
 			// Create the JSON payload
 			String botDefinitionId = "64ba901fae2da550a05b1809";
 			String configInfoId = "64ba9029a5297b05ffc994ba";
+			// String botDefinitionId = "64baa483c24ebd8cc67a32a6";
+			// String configInfoId = "64baa482843d5b9bd9be0ee6";
+
 
 			// String importBody = "{\n" + "  \"botDefinition\": \"" + botDefinitionId + "\",\n" + "  \"configInfo\": \""
 			// 		+ configInfoId + "\",\n" + "  \"importOptions\": {\n" + "    \"tasks\": [\n"

@@ -14,8 +14,8 @@ public class UploadFile {
     public static void main(String[] args) throws IOException {
         String apiUrl = "https://bots.kore.ai/api/public/uploadfile";
         String authToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLWVmYTk1Yjc4LTc4NDYtNTQ5MC1iNzc1LTg1ODJkYTgxY2RhNSJ9.9gODvgXbG2DOtOvVfLyM2Jea-G2Tvx69C0JnbANpX7A";
-        String[] fileNames = { "C:/Users/gg/Downloads/Demobo/botDefinition.json",
-                "C:/Users/gg/Downloads/Demobo/config.json" };
+        String[] fileNames = { "C:/Users/gg/Documents/Darshana-infy/Botkit-Master-Demo/ExportBot/botDefinition.json",
+                "C:/Users/gg/Documents/Darshana-infy/Botkit-Master-Demo/ExportBot/config.json" };
         String fileContext = "bulkImport";
         String fileExtension = "json";
         String boundary = "------------------------abcdef1234567890";
