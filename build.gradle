@@ -1,20 +1,20 @@
-// plugins {
-//     id 'java'
-// }
-// apply plugin : 'java'
+plugins {
+    id 'java'
+}
+apply plugin : 'java'
 
-// repositories {
-//     jcenter()
-// }
+repositories {
+    jcenter()
+}
 
-// dependencies {
-//     implementation 'org.json:json:20230618'
-// }
+dependencies {
+    implementation 'org.json:json:20230618'
+}
 
-// mainClassName = UploadImport
+mainClassName = UploadImport
 
 // plugins { id "application" } 
 // apply plugin : "java" 
 // ext { javaMainClass = "UploadImport" } 
 // application { mainClassName = javaMainClass }
-plugins { id "application" } apply plugin : "java" application { mainClassName = UploadImport}
+// plugins { id "application" } apply plugin : "java" application { mainClassName = UploadImport}
