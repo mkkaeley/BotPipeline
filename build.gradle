@@ -1,13 +1,26 @@
+// plugins {
+//     id 'java'
+// }
+// apply plugin : 'java'
+
+// repositories {
+//     jcenter()
+// }
+
+// dependencies {
+//     implementation 'org.json:json:20230618'
+// }
+
+// mainClassName = UploadImport
+
 plugins {
-    id 'java'
+    id "application"
+}
+apply plugin : "java" 
+ext {
+   javaUploadImport = "com.baeldung.gradle.exec.UploadImport"
 }
 
-repositories {
-    jcenter()
+application {
+    mainClassName = javaUploadImport
 }
-
-dependencies {
-    implementation 'org.json:json:20230618'
-}
-
-mainClassName = UploadImport
