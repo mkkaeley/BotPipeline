@@ -1,23 +1,23 @@
-plugins {
-    id 'java'
-}
+// plugins {
+//     id 'java'
+// }
 
-repositories {
-    jcenter()
-}
+// repositories {
+//     jcenter()
+// }
 
-dependencies {
-    // Add your project dependencies here if needed
-}
+// dependencies {
+//     // Add your project dependencies here if needed
+// }
 
-task compileJava(type: JavaCompile) {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
-    sourceSets.main.java.srcDirs = ['src']
-    classpath = sourceSets.main.runtimeClasspath
-}
+// task compileJava(type: JavaCompile) {
+//     sourceCompatibility = JavaVersion.VERSION_1_8
+//     targetCompatibility = JavaVersion.VERSION_1_8
+//     sourceSets.main.java.srcDirs = ['src']
+//     classpath = sourceSets.main.runtimeClasspath
+// }
 
-task runJava(type: JavaExec, dependsOn: compileJava) {
-    main = 'UploadImport' // Replace with the fully qualified name of your main class
-    classpath = sourceSets.main.runtimeClasspath
-}
+// task runJava(type: JavaExec, dependsOn: compileJava) {
+//     main = 'UploadImport' // Replace with the fully qualified name of your main class
+//     classpath = sourceSets.main.runtimeClasspath
+// }
