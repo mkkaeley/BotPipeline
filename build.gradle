@@ -13,5 +13,8 @@
 
 // mainClassName = UploadImport
 
-plugins { id "application" } 
-apply plugin : "java" ext { javaMainClass = "UploadImport" } application { mainClassName = javaMainClass }
+// plugins { id "application" } 
+// apply plugin : "java" 
+// ext { javaMainClass = "UploadImport" } 
+// application { mainClassName = javaMainClass }
+plugins { id "application" } apply plugin : "java" application { mainClassName = UploadImport}
