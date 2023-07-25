@@ -13,14 +13,5 @@
 
 // mainClassName = UploadImport
 
-plugins {
-    id "application"
-}
-apply plugin : "java" 
-ext {
-   javaUploadImport = "com.baeldung.gradle.exec.UploadImport"
-}
-
-application {
-    mainClassName = "UploadImport"
-}
+plugins { id "application" } 
+apply plugin : "java" ext { javaMainClass = "UploadImport" } application { mainClassName = javaMainClass }
