@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    // Your dependencies, if any
+    implementation 'org.json:json:20230618'
 }
 
 mainClassName = 'UploadImport'
