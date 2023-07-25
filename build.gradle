@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // Your dependencies, if any
+}
+
+mainClassName = 'UploadImport'
