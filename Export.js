@@ -12,7 +12,7 @@ module.exports = {
 
         // //---------------------------Running Java File (For that we rquired Child process and cmd is "npm install child_process")
         const { exec } = require('child_process');
-           exec('java -cp ".;./lib/json-20230618.jar" Export.java', (error, stdout, stderr) => {
+           exec('java -cp ".;./lib/json-20230618.jar" ExportJava.java', (error, stdout, stderr) => {
           if (error) {
             console.error('Error executing Java file:', error);
             return;
