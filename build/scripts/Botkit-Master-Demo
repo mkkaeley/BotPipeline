@@ -209,7 +209,7 @@ DEFAULT_JVM_OPTS=""
 
 set -- \
         -classpath "$CLASSPATH" \
-        Import \
+        UploadImport \
         "$@"
 
 # Stop when "xargs" is not available.

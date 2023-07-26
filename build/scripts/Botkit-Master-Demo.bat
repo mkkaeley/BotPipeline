@@ -72,7 +72,7 @@ set CLASSPATH=%APP_HOME%\lib\Botkit-Master-Demo.jar;%APP_HOME%\lib\json-20230618
 
 
 @rem Execute Botkit-Master-Demo
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %BOTKIT_MASTER_DEMO_OPTS%  -classpath "%CLASSPATH%" Import %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %BOTKIT_MASTER_DEMO_OPTS%  -classpath "%CLASSPATH%" UploadImport %*
 
 :end
 @rem End local scope for the variables with windows NT shell
