@@ -1,3 +1,8 @@
 apply plugin: 'application'
 
-mainClassName = 'UploadImport'
+mainClassName = 'Import'
+
+dependencies {
+    implementation files('lib/json-20230618.jar')
+    // Other dependencies if needed
+}
