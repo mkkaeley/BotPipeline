@@ -1,3 +1,3 @@
 apply plugin: 'application'
 
-mainClassName = 'hello.HelloWorld'
+mainClassName = 'Export'
