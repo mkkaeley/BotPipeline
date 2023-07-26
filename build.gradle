@@ -1,3 +1,8 @@
 apply plugin: 'application'
 
-mainClassName = 'UploadImport'
+// mainClassName = 'UploadImport'
+
+task run(type: JavaExec) {
+    main = 'UploadImport.java' // Replace 'com.example.MainClass' with the fully qualified name of your main Java class.
+    classpath = sourceSets.main.runtimeClasspath
+}

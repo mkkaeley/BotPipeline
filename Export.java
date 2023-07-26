@@ -22,7 +22,7 @@ import org.json.JSONObject;
 import java.nio.file.Path;
 
 
-public class ExportJava {
+public class Export {
 
     public static void main(String[] args) {
         HttpURLConnection exportStatusConnection = null;
