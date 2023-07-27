@@ -1,22 +1,14 @@
-plugins {
-    id 'java' // Apply the Java plugin
-    id 'application' // Apply the Application plugin
+apply plugin: 'java'
+
+repositories {
+    jcenter()
 }
 
-// Set the source compatibility and target compatibility
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-}
-
-// Set the main class for the application
-application {
-    // Replace 'com.example.myproject.MainClass' with the actual fully qualified name of your main class
-    mainClassName = 'UploadImport'
-}
-
-// Define the project dependencies (if any)
 dependencies {
-    //  implementation 'org.apache.httpcomponents:httpclient:4.5.13',
-      implementation files('C:\\Users\\gg\\Documents\\Darshana-infy\\Botkit-Master-Demo\\lib\\json-20230618.jar')
+    implementation 'org.json:json:20210307'
+}
+
+task runJava(type: JavaExec) {
+    main = 'UploadImport' // Replace 'HelloWorld' with the name of your main class if different
+    classpath = sourceSets.main.runtimeClasspath
 }

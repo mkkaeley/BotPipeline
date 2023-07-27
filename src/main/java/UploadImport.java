@@ -1,3 +1,4 @@
+// package src.main.java;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,8 +16,8 @@ public class UploadImport {
 		try {
 			String uploadApiUrl = "https://bots.kore.ai/api/public/uploadfile";
 			String authToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNzLTUzYmZjNmEzLThkMTAtNTFiYS05NzZjLTVhOTMxYzg0Mzc4YSJ9.XKs7o1es4pSUIzgc9z7lZQAuZHVhif6Aq12zni8FPAw";
-			String[] fileNames = { "ExportBot/botDefinition.json",
-					"ExportBot/config.json" };
+			String[] fileNames = { "./ExportBot/botDefinition.json",
+					"./ExportBot/config.json" };
 			String fileContext = "bulkImport";
 			String fileExtension = "json";
 			String boundary = "------------------------abcdef1234567890";
