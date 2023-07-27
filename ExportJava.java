@@ -137,7 +137,7 @@ public class ExportJava {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String gitRepoPath = "git@github.com:darshana0406/Botkit-Master-Demo.git"; // Replace this with the actual path to your Git repository
+        String gitRepoPath = "https://github.com/darshana0406/Botkit-Master-Demo.git"; // Replace this with the actual path to your Git repository
         String commitMessage = "changes for gradle";
 
         // Git commands
