@@ -143,7 +143,7 @@ public class ExportJava {
         // Git commands
         String gitAdd = "git add .";
         String gitCommit = "git commit -m \"" + commitMessage + "\"";
-        String gitPush = "git push origin gradle-main";
+        String gitPush = "git push";
 
         // Execute Git commands
         try {
