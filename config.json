@@ -4,7 +4,7 @@
     },
     "app": {
         "apiPrefix" : "",
-        "url": "https://five-corners-relate.loca.lt"
+        "url": "https://fancy-cars-act.loca.lt"
     },
     "validations": {
         "leastNodeVersion": 10
