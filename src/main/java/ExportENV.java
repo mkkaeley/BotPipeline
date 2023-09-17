@@ -165,7 +165,7 @@ public class ExportENV {
             }
 
             // Set user name
-            ProcessBuilder setName = new ProcessBuilder("git", "config", "--global", "user.name", "meenakshi");
+            ProcessBuilder setName = new ProcessBuilder("git", "config", "--global", "user.name", "Meenakshi Kaeley");
             Process nameProcess = setName.start();
             int nameExitCode = nameProcess.waitFor();
             if (nameExitCode == 0) {
