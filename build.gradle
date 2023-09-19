@@ -20,11 +20,11 @@ task runJava(type: JavaExec) {
     
     doFirst  {       
 
-        //def env = project.getProperty('Environment')
+        def env = project.getProperty('env')
         def exportType = project.getProperty('exportType')
-       // println "Chosen Value of ENV : $env"
+       println "Chosen Value of ENV : $env"
         println "Chosen Value of Export Type : $exportType"
-        args exportType
+        args exportType, env
        
     }
     
