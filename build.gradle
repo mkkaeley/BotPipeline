@@ -15,7 +15,7 @@ dependencies {
 
 
 task runJava(type: JavaExec) {
-    main = 'ExportENV' // Replace 'HelloWorld' with the name of your main class if different
+    mainClass = 'ExportENV' // Replace 'HelloWorld' with the name of your main class if different
     classpath = sourceSets.main.runtimeClasspath
     
     doFirst  {       
@@ -30,7 +30,7 @@ task runJava(type: JavaExec) {
     
 }
 task runJavaI(type: JavaExec) {
-    main = 'UI' // Replace 'HelloWorld' with the name of your main class if different
+    mainClass = 'UI' // Replace 'HelloWorld' with the name of your main class if different
     classpath = sourceSets.main.runtimeClasspath
 
     doFirst  {       
